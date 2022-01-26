@@ -9,7 +9,7 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'BRRR';
   display: flex;
   align-items: center;
@@ -22,11 +22,27 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 5%;
+  padding: 0 5vh;
 }
 
 h1 {
   font-size: 4.2rem;
+  margin-bottom: 5vh;
+}
+
+section {
+  max-width: 690px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 8vh;
+}
+
+section p {
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+section p:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .subtitle {
@@ -34,100 +50,18 @@ h1 {
 }
 
 .social {
-    position: absolute;
-    bottom: 8%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 8vh;
 }
 
 .social span {
-    margin-bottom: 5%;
+  margin-bottom: 2vh;
 }
 
 a {
-    color: var(--color-light);
-    font-size: .8rem;
-}
-
-.gradient {
-  width: 2400px;
-  height: 1260px;
-  color: inherit;
-  background-image: repeating-conic-gradient(
-      from 113deg at 77% 84%,
-      hsla(22.86, 85.71%, 38.43%, 0.945870199107991) 19%,
-      hsla(96.92, 100%, 54.12%, 0.6563751176227193) 61%
-    ),
-    radial-gradient(
-      circle at 33% 30%,
-      hsla(283.41, 55.66%, 56.67%, 0.6977595548524815) 35%,
-      hsla(324.15, 70.04%, 44.51%, 0.610261962014617) 38%
-    ),
-    conic-gradient(
-      from 117deg at 30% 47%,
-      hsla(10.21, 56.63%, 83.73%, 0.8299898969815697) 69%,
-      hsla(231.94, 95.88%, 38.04%, 0.2416383473937238) 79%
-    ),
-    radial-gradient(
-      circle at 84% 71%,
-      hsla(155.16, 72.35%, 57.45%, 0.7568161829719732) 61%,
-      hsla(197.42, 39.24%, 46.47%, 0.7006748239715139) 76%
-    ),
-    radial-gradient(ellipse at 52% 35%, #ee6047 72%, #188db5 76%);
-}
-
-/* .gradient {
-  color: inherit;
-  background-image: radial-gradient(
-      ellipse at 13% 24%,
-      hsla(124.05, 65.49%, 44.31%, 0.006721867852762187) 31%,
-      hsla(339.02, 73.09%, 43.73%, 0.3759361380827597) 60%
-    ),
-    radial-gradient(
-      ellipse at 14% 73%,
-      hsla(319.91, 97.48%, 46.67%, 0.3070252359219061) 44%,
-      hsla(200.33, 87.38%, 59.61%, 0.8605601764688667) 58%
-    ),
-    conic-gradient(
-      from 169deg at 86% 37%,
-      hsla(71.43, 89.74%, 45.88%, 0.8544389899576657) 55%,
-      hsla(169.25, 30.04%, 56.27%, 0.9204730894230683) 81%
-    ),
-    repeating-conic-gradient(
-      from 157deg at 37% 83%,
-      hsla(177.76, 70.53%, 62.75%, 0.8582635875264206) 87%,
-      hsla(198.14, 46.74%, 63.92%, 0.5717142976584454) 88%
-    ),
-    repeating-linear-gradient(226deg, #303f35 3%, #a79df9 34%);
-} */
-
-.gradient-old {
-  width: 2400px;
-  height: 1260px;
-  color: inherit;
-  background-image: repeating-linear-gradient(
-      72deg,
-      hsla(18, 44.3%, 30.98%, 0.9932720574914151) 35%,
-      hsla(163.85, 75%, 79.61%, 0.4060691341365368) 93%
-    ),
-    linear-gradient(
-      348deg,
-      hsla(272, 66.5%, 60.2%, 0.17869260230436035) 54%,
-      hsla(258.08, 62.9%, 51.37%, 0.13974208846613578) 78%
-    ),
-    repeating-conic-gradient(
-      from 323deg at 38% 69%,
-      hsla(291.54, 60%, 25.49%, 0.3177696710475495) 100%,
-      hsla(73.58, 79.17%, 52.94%, 0.8889701913849567) 49%
-    ),
-    conic-gradient(
-      from 127deg at 51% 56%,
-      hsla(25.34, 91.96%, 43.92%, 0.34520917106859417) 46%,
-      hsla(218.36, 36.09%, 33.14%, 0.9735219743434678) 79%
-    ),
-    conic-gradient(from 18deg at 54% 44%, #ced34c 14%, #c44169 9%);
+  color: var(--color-light);
+  font-size: 0.8rem;
 }
